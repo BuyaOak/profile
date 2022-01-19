@@ -1,96 +1,501 @@
-body {
-    text-align: center;
-    font-family: Big Shoulders Display;
-    font-size: 40px;
-    background-color:#04080F;
-  }
+.nav-bar {
+	height: 5rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 5;
+	display: flex;
+	justify-content: left;
+  color: whitesmoke;
+}
+
+#nav-link {
+  color: whitesmoke;
+  text-shadow: 2px 2px 4px;
+  font-size: 26px;
+  position: relative;
+  bottom: 8px;
+  left: 10px;
+  font-family: 'Big Shoulders Display';
+  padding-right: 15px;
+}
+
+#nav-link:hover {
+  color: #ffffff;
+  transition: .3s;
+  text-shadow: 8px 8px 8px;
+  text-decoration: none;
+}
+
+.a1 {
+  background: url("images/quinton-coetzee.jpg");
+  background-size: cover;
+  text-align: center;
+  opacity: 98%;
+}
+
+.banner-name {
+  font-size: 44px;  
+  color: whitesmoke;
+  padding-bottom: 25px;
+  font-weight: bold;
   
-  h2{
-  text-shadow: 2px 2px 10px;
-  color:white; 	
-  }
-  
-  .button {color: white ;
-    font-size: 30px;
-    padding: 16px 48px;
-    border-radius: 6px;
+}
+
+.banner-text {
+  font-size: 24px;
+  color: whitesmoke;
+  font-family: 'Big Shoulders Display';
+}
+
+
+#button {
+    color: #f5783e;
+    font-size: 22px;
+    padding: 2px 4px 2px 4px;
     text-decoration: none;
     transition: .3s;
-    background-color:#523249;
-   }
+    text-align: center;
+    place-content: center;
+    text-shadow: 2px 2px 8px;
+    font-family: 'Big Shoulders Display';
+}
 
-   @media (max-width: 960px) {
-    /* For a screen < 960px, this CSS will be read */
-    .body {
-      width: 700px;
-    }
-  }
-  @media (max-width: 720px) {
-    /* For a screen < 720px, this CSS will be read */
-    .body {
-      width: 500px;
-    }
-  }
-  @media (max-width: 540px) {
-    /* For a screen < 540px, this CSS will be read */
-    .body{
-      width: 300px;
-    }
-  }
-  
-  .button:hover {
-    color: #CE2FAE;
-  }
-  
-  .banner { 
+#button:hover {
+    color: #fd5000;
+    transition: .3s;
+}
+
+ol {
+  list-style-type: none;
+  color: whitesmoke;
+  font-size: 24px;
+  text-decoration: none;
+  transition: .3s;
+  padding-top:5px;
+  position: relative;
+  right: 40px;
+  display: grid; 
+  grid-column-gap: 3rem;
+  place-content: center;
+  gap: 1rem;
+}
+
+ol:hover {
+  color: #f5783e;
+  transition: .3s;
+}
+
+.a2 {
+  background: url("images/amr-taha.jpg");
   background-size: cover;
-  padding: 148px, 256px;
+  text-align: center;
+  opacity: 90%;
+}
+
+.profile-name {
+  font-size: 42px;
+  font-weight: bold;
+  position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	text-align: center;
+	text-transform: capitalize;
+	color: whitesmoke;
+}
+
+.tech-stack-one {
+ 
+  color:whitesmoke;
+  font-size: 22px;
+  position: absolute;
+	bottom: 73%;
+	left: 46%;
+	transform: translateX(-50%);
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+  gap: 2rem;
+	justify-content: center;
+}
+
+.tech-stack-two {
+  color:whitesmoke;
+  font-size: 22px;
+  position: absolute;
+	bottom: 67%;
+	left: 46%;
+	transform: translateX(-50%);
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+  gap: 2rem;
+	justify-content: center;
+}
+
+.profile-text {
+  text-shadow: 2px ;
+  color:whitesmoke;
+  font-size: 22px;
+  font-family: 'Big Shoulders Display';
+  position: absolute;
+	bottom: 55%;
+	left: 33%;
+  
+}
+
+.a3 {
+  background-image: url("images/mohammad-rahmani.jpg");
   background-position: center;
-  color: #CE2FAE;
-  padding: 200px;
-  margin: 10px;
-  text-shadow: 2px 2px 10px;
-  opacity: 0.8;
-  border-radius: 6px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.project-name {
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.b2 {
+  background-image: url("images/Screenshot (44).png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+
+.project-2-name {
+  color:black;
+  font-weight: bolder;
+  font-size: 48px;
+  position: absolute;
+	bottom: 85%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+  gap: 2rem;
+	justify-content: center;
+}
+
+.project-info-1 {
+  color:black;
+  font-size: 24px;
+  position: absolute;
+	bottom: 65%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+  gap: 2rem;
+	justify-content: center;
+  font-family: 'Big Shoulders Display';
+}
+
+#button-two {
+  font-size: 24px;
+  padding: 2px 4px 2px 4px;
+  text-decoration: none;
+  transition: .3s;
+  text-align: center;
+  place-content: center;
+  text-shadow: 2px 2px 8px;
+  position: absolute;
+	bottom: 60%;
+	left: 58%;
+	transform: translateX(-50%);
+  font-family: 'Big Shoulders Display';
+}
+
+.b3 {
+  background-image: url("images/Screenshot (45).png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  image-resolution: 4000dpi; 
+  background-color: #110E0E;
+  color:whitesmoke;
+  font-size: 28px;
+  font-family: 'Big Shoulders Display';
+  text-align: center;
+}
+.project-3-name {
+  color:whitesmoke;
+  font-size: 48px;
+  font-weight: bolder;
+  position: absolute;
+	bottom: 82%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+  gap: 2rem;
+	justify-content: center;
+}
+
+.project-info-2 {
+  font-size: 24px;
+  font-family: 'Big Shoulders Display';
+  position: absolute;
+	bottom: 60%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+  gap: 2rem;
+	justify-content: center;
+}
+
+#button-three {
+  font-size: 24px;
+  text-decoration: none;
+  transition: .3s;
+  text-align: center;
+  place-content: center;
+  text-shadow: 2px 2px 9px;
+  position: absolute;
+	bottom: 35%;
+	left: 50%;
+	transform: translateX(-50%);
+  font-family: 'Big Shoulders Display';
+}
+
+.a4 {
+  background-image: url(images/quinton-coetzee-2.jpg);
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.contact-name {
+  color:whitesmoke;
+  font-size: 48px;
+  font-weight: bold;
+  position: absolute;
+	bottom: 82%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+  gap: 2rem;
+	justify-content: center;
+
+}
+
+.form-container {
+  width: 40%;
+  padding: 12px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  position: relative;
+  left: 30%;
+  color:whitesmoke;
+  font-size: 24px;
+  font-family: 'Big Shoulders Display';
+}
+
+#person-name {
+  height: fit-content;
+  font-size: 18px; 
+}
+
+#email-name {
+  margin-bottom: 5px;
+  height: fit-content;
+  font-size: 18px;
+}
+
+#email-body {
+  margin-top: 5px;
+}
+
+#button-4 {
+  color: #f5783e;
+  margin-top: 10px;
+  font-size: 24px;
+  padding: 2px 4px 2px 4px;
+  text-decoration: none;
+  transition: .3s;
+  text-align: center;
+  place-content: center;
+  text-shadow: 2px 2px 8px;
+  font-family: 'Big Shoulders Display';
+
+}
+#button-4:hover {
+  color: #fd5000;
+  transition: .3s;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background:whitesmoke;
+}
+
+.fp-slidesNav.fp-bottom {
+  display: flex; 
+  justify-content: center
+}
+
+/* xsm=300 */
+/* sm=500 */
+/* md=900 */
+/* lg=1600 */
+/* xl=1900 */
+
+@media screen and (min-width: 300px) {
+
+  .banner-text {
+    font-size: 14px;
+    color: whitesmoke;
+    font-family: 'Big Shoulders Display';
   }
   
-  .myimg {
-      width: 300px;
-      border-radius:90%;
-      padding: 80px;
-      box-shadow: 0 0 16px rgba(0,0,0,0.3);
-      position: relative;
+ .profile-text {
+   position: absolute;
+   bottom: 57%;
+   left: 15%;
+   font-size: 18px;
+ }
+
+ .project-info-1{
+  position: absolute;
+  bottom: 57%;
+  left: 51%;
+  font-size: 18px;
   
+ }
+
+ .project-info-2{
+  position: absolute;
+  bottom: 57%;
+  left: 51%;
+  font-size: 18px;
+ }
+
+ #button-two {
+  position: absolute;
+	bottom:30%;
+	left: 50%;
+ }
+
+ #button-three {
+  position: absolute;
+	bottom: 35%;
+	left: 50%;
+ }
+ .form-container{
+   text-align: center;
+ }
+ #email-body {
+    position: absolute;
+    right: 5%;
+    height: 50px; 
+ }
+ #button-4 {
+  margin-top: 4rem;
+ }
+}
+
+@media screen and (min-width: 500px) { 
+
+  .profile-text {
+    margin-left: 8rem;
+  }
+
+  #email-body {
+    margin-right: 4.5rem;
+  }
+}
+
+@media screen and (min-width: 900px) { 
+  
+  .banner-text {
+    font-size: 24px;
+  }
+
+  .profile-text {
+    margin-left: 13rem;
+  }
+
+  #email-body {
+    margin-right: 6.5rem;
+  }
+  .project-info-1 {
+    font-size: 24px;
+  }
+  .project-info-2 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  
+  .profile-text {
+    margin-left: 22rem;
+  }
+
+  #email-body {
+    margin-right: 10rem;
+  }
+
+}
+
+@media screen and (min-width: 1600px) {
+
+  
+  .tech-stack-one {
+    margin-left: 3rem;
+  }
+
+  .tech-stack-two {
+    margin-left: 3rem;
   }
   
-  .ul1{list-style-type: none;
-        color: white ;
-        font-size: 18px;
-      background-color:#04080F;
-      text-decoration: none;
-      transition: .3s;
-   }
-  .ul2{list-style-type: none;
-        color: white ;
-        font-size: 18px;
-      background-color:#04080F;
-      text-decoration: none;
-      transition: .3s;
+  .profile-text {
+    margin-left: 28rem;
   }
-  .ul3{list-style-type: none;
-        color: white ;
-        font-size: 18px;
-        background-color:#04080F;
-      text-decoration: none;
-      transition: .3s;
+
+  #email-body {
+    margin-right: 10rem;
   }
-  .ul1:hover {
-    color: #CE2FAE;
-   }
-  .ul2:hover {
-    color: #CE2FAE;
-   }
-  .ul3:hover {
-    color: #CE2FAE;
-   }
+}
+
+@media screen and (min-width: 1900px) {
+
+  .banner-text {
+    font-size: 24px;
+  }
+
+  .profile-text {
+    margin-left: 36rem;
+  }
+
+  #email-body {
+    margin-right: 18rem;
+  }
+
+}
   
