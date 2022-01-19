@@ -1,37 +1,153 @@
+<!doctype html>
 <html lang=en>
     <head >
-      <div>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
         <title>Ayub's New Profile</title>
-      </div>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;800&display=swap" rel="stylesheet">
+        <link
+			    rel="stylesheet"
+			    href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css"/>
         <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="fullpage.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
     </head>
-
     <body>
-        
-    <div class="banner">
-      <h1> This is Ayub's Landing Page</h1>
-        <p>This is a Buya Production</p>
-        
+      <nav class= "nav-bar">
+        <a id="nav-link" href='#firstPage'>Home</a>
+        <a id="nav-link" href="https://docs.google.com/document/d/1l2ITB63bAa9o_2X6cRlkUPgX5qEe2r92pbEFpZ4Cop4/edit?usp=sharing" target="blank">Resume</a>
+        <a id="nav-link" href='#thirdPage'>Projects</a>
+        <a id="nav-link" href='#fourthPage'>Contact</a>
+      </nav>       
+       <div id="fullpage">
+
+          <div class="section a1">
+            <h1 class="banner-name">Ayub Bey</h1>
+            <p class="banner-text">From the United States, Based in Finland
+            <br>
+             I Design and Build Intuitive Websites, Landing Pages & Webapps
+            </p>
+            
+              <ul>
+                <ol href="https://github.com/BuyaOak" target="blank" class="fab fa-github"></ol>
+                <ol href="https://www.linkedin.com/in/ayub-bey-8338a1113/" target="blank"class="fab fa-linkedin"></ol>
+              </ul>
+            <br>
+              <input id = "button" type="submit" href="https://docs.google.com/document/d/1l2ITB63bAa9o_2X6cRlkUPgX5qEe2r92pbEFpZ4Cop4/edit?usp=sharing" target="blank" class="btn btn-light" value= "My Resume">
+          </div>
+
+          <div class="section a2">
+            <h1 class= "profile-name">Skills</h1>
+            <ul class=  "tech-stack-one">
+              <div class="cell"><li id= "tech-stack" class="fab fa-html5"><span style="font-family: Big Shoulders Display; margin-bottom: 10px;">HTML</span></li></div>
+              <div class="cell"><li id= "tech-stack" class="fab fa-css3"><span style="font-family: Big Shoulders Display; margin-bottom: 10px;">CSS</span></li></div>
+              <div class="cell"><li id= "tech-stack" class="fab fa-js-square"><span style="font-family: Big Shoulders Display; margin-bottom: 10px;">JavaScript</span></li></div>
+            </ul>
+            <ul class=  "tech-stack-two">
+                <br>
+                <div class="cell"><li id= "tech-stack" class="fab fa-react"><span style="font-family: Big Shoulders Display; margin-bottom: 10px;">React</span></li></div>
+                <div class="cell"><li id= "tech-stack" class="fab fa-node-js"><span style="font-family: Big Shoulders Display; margin-bottom: 10px;">Node.js</span></li></div>
+                <div class="cell"><li id= "tech-stack" class="far fa-gem"><span style="font-family: Big Shoulders Display;">RubyonRails</span></li></div>
+              <br>
+            </ul>
+            <p class= "profile-text"><strong>My Knowledge also includes:</strong>
+              <br> 
+              Figma, Bootstrap, SQL, Postgres, Webpack, R, and NPM </p>
+          </div>  
+
+          <div class="section a3">
+            
+            <div class="slide b1"> 
+              <h1 class= "project-name" style="margin-left: 10px;">Recent Projects</h1> 
+            </div>
+	          
+            <div class="slide b2"> 
+              <h1 class="project-2-name">Air R&R</h1>
+              <div class="project-info-1">
+                <p>An Air BnB clone that allows users to connect to find and exchange books with other local users.
+                  <br>
+                  <strong>My contribution:</strong>
+                  <br>
+                  Design, Front-End, Search functionality
+                  <br>  
+                  <strong>Stack:</strong>
+                  <br>
+                  Ruby on Rails, JavaScript, HTML, CSS 
+                </p>
+              </div>
+              <input id = "button-two" type="submit" href="https://airrnr.herokuapp.com/" target="blank" class="btn btn-warning" value= "View">
+            </div>
+	          
+            <div class="slide b3"> 
+              <h1 class= "project-3-name">Flash.game</h1>
+              <div class="project-info-2">
+                <p>A Moblie-Optimized Flash Card Study App Where You Can Create Your Own Questions
+                   <br>
+                    <strong>My contribution:</strong>
+                    <br>
+                    Design, Front-End, Search functionality
+                    <br>  
+                    <strong>Stack:</strong>
+                    <br>
+                    Ruby on Rails, JavaScript, HTML, SCSS 
+                  </p>
+                </div>
+                <input id = "button-three" type="submit" href="http://www.flashcard.games/" target="blank" class="btn btn-danger" value= "View">
+              </div>
+          </div>
+	        
+          <div class="section a4">
+              
+              <h1 class="contact-name">Contact page</h1>
+            
+            <div class="form-container">
+              <form action="https://formsubmit.co/Ayub.Bey@gmail.com" method="POST">
+                
+                <label for="name">Name</label>
+                <br>
+                <input type="text" name="name" placeholder="Name" id="person-name" required>
+                <br>
+                <label for="email">Email</label>
+                <br>
+                <input type="email" name="email" placeholder="Email" id="email-name" required>
+                <br>
+                <label for="text">How I can help you?</label>
+                <br>
+                <textarea type="text" name="text" id="email-body" placeholder="" required></textarea>
+                <br>
+              </form>
+                <button type="submit" id="button-4" target="blank" class="btn btn-light">Send</button>
+              </form>
+            </div>
+          </div>
           
-        <a href="www.lewagon.com" target="blank" class="button"> Check it out!</a>
-
-      <img class="myimg" src="images/post_run.jpg" alt="">       
+       </div>
       
-      <h2> I am just a guy with his dog in Shanghai! I took up coding for a challenge! 
-           I also enjoy boxing, kettlebells and club bells, new books and 
-           Dungeons and Dragons. Nice to have your accquaintance!
-      </h2>
 
-     <ul>
-         <i><i class="fab fa-facebook"></i></li>
-         <i><i class="fab fa-instagram"></i></li>
-         <i><i class="fab fa-twitter-square"></i></li>
-     </ul>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+      <script>
+
+        new fullpage('#fullpage', {
+	      //options here
+	      autoScrolling:true,
+	      scrollHorizontally: true,
+        navigation: true,
+        keyboardScrolling: true,
+        controlArrows: false,
+        slidesNavigation: true,
+        slidesNavPosition: 'bottom',
+        anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage']
+        });
+
+       </script>
 
     </body>
-    </html>
+</html>
